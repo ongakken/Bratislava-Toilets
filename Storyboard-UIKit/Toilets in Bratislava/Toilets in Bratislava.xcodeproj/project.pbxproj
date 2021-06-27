@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F202688BD41005F2A39 /* AppDelegate.swift */; };
+		15729F232688BD41005F2A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F222688BD41005F2A39 /* SceneDelegate.swift */; };
+		15729F252688BD41005F2A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F242688BD41005F2A39 /* ViewController.swift */; };
+		15729F282688BD41005F2A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15729F262688BD41005F2A39 /* Main.storyboard */; };
+		15729F2A2688BD42005F2A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15729F292688BD42005F2A39 /* Assets.xcassets */; };
+		15729F2D2688BD42005F2A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15729F2B2688BD42005F2A39 /* LaunchScreen.storyboard */; };
+		2EE0266211BF2F0B6CA5FF5C /* Pods_Toilets_in_Bratislava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18D4F80BABB5AC4D75F8F34 /* Pods_Toilets_in_Bratislava.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.release.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.release.xcconfig"; sourceTree = "<group>"; };
+		15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilets in Bratislava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15729F202688BD41005F2A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15729F222688BD41005F2A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15729F242688BD41005F2A39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15729F272688BD41005F2A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15729F292688BD42005F2A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15729F2C2688BD42005F2A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15729F2E2688BD42005F2A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB81096A9FF55411E9C7E37 /* Pods-Toilets in Bratislava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.debug.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.debug.xcconfig"; sourceTree = "<group>"; };
+		A18D4F80BABB5AC4D75F8F34 /* Pods_Toilets_in_Bratislava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toilets_in_Bratislava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15729F1A2688BD41005F2A39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE0266211BF2F0B6CA5FF5C /* Pods_Toilets_in_Bratislava.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15729F142688BD41005F2A39 = {
+			isa = PBXGroup;
+			children = (
+				15729F1F2688BD41005F2A39 /* Toilets in Bratislava */,
+				15729F1E2688BD41005F2A39 /* Products */,
+				D4E4AEE2F38EC1F9BBC74B1E /* Pods */,
+				3C0D12C162E4FB32F6537C91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15729F1E2688BD41005F2A39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15729F1F2688BD41005F2A39 /* Toilets in Bratislava */ = {
+			isa = PBXGroup;
+			children = (
+				15729F202688BD41005F2A39 /* AppDelegate.swift */,
+				15729F222688BD41005F2A39 /* SceneDelegate.swift */,
+				15729F242688BD41005F2A39 /* ViewController.swift */,
+				15729F262688BD41005F2A39 /* Main.storyboard */,
+				15729F292688BD42005F2A39 /* Assets.xcassets */,
+				15729F2B2688BD42005F2A39 /* LaunchScreen.storyboard */,
+				15729F2E2688BD42005F2A39 /* Info.plist */,
+			);
+			path = "Toilets in Bratislava";
+			sourceTree = "<group>";
+		};
+		3C0D12C162E4FB32F6537C91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18D4F80BABB5AC4D75F8F34 /* Pods_Toilets_in_Bratislava.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4E4AEE2F38EC1F9BBC74B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DB81096A9FF55411E9C7E37 /* Pods-Toilets in Bratislava.debug.xcconfig */,
+				0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15729F1C2688BD41005F2A39 /* Toilets in Bratislava */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15729F312688BD42005F2A39 /* Build configuration list for PBXNativeTarget "Toilets in Bratislava" */;
+			buildPhases = (
+				98D0A3BEE52434BEB1AD486C /* [CP] Check Pods Manifest.lock */,
+				15729F192688BD41005F2A39 /* Sources */,
+				15729F1A2688BD41005F2A39 /* Frameworks */,
+				15729F1B2688BD41005F2A39 /* Resources */,
+				B0A119C895AFA232F48C5A92 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toilets in Bratislava";
+			productName = "Toilets in Bratislava";
+			productReference = 15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15729F152688BD41005F2A39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					15729F1C2688BD41005F2A39 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 15729F182688BD41005F2A39 /* Build configuration list for PBXProject "Toilets in Bratislava" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15729F142688BD41005F2A39;
+			productRefGroup = 15729F1E2688BD41005F2A39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15729F1C2688BD41005F2A39 /* Toilets in Bratislava */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15729F1B2688BD41005F2A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15729F2D2688BD42005F2A39 /* LaunchScreen.storyboard in Resources */,
+				15729F2A2688BD42005F2A39 /* Assets.xcassets in Resources */,
+				15729F282688BD41005F2A39 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98D0A3BEE52434BEB1AD486C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toilets in Bratislava-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A119C895AFA232F48C5A92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15729F192688BD41005F2A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15729F252688BD41005F2A39 /* ViewController.swift in Sources */,
+				15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */,
+				15729F232688BD41005F2A39 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15729F262688BD41005F2A39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15729F272688BD41005F2A39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15729F2B2688BD42005F2A39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15729F2C2688BD42005F2A39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15729F2F2688BD42005F2A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15729F302688BD42005F2A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15729F322688BD42005F2A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB81096A9FF55411E9C7E37 /* Pods-Toilets in Bratislava.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XQ5SLZB954;
+				INFOPLIST_FILE = "Toilets in Bratislava/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ongakken.batoilets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15729F332688BD42005F2A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XQ5SLZB954;
+				INFOPLIST_FILE = "Toilets in Bratislava/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.01;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ongakken.batoilets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "toiletsinbratislava-profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15729F182688BD41005F2A39 /* Build configuration list for PBXProject "Toilets in Bratislava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15729F2F2688BD42005F2A39 /* Debug */,
+				15729F302688BD42005F2A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15729F312688BD42005F2A39 /* Build configuration list for PBXNativeTarget "Toilets in Bratislava" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15729F322688BD42005F2A39 /* Debug */,
+				15729F332688BD42005F2A39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15729F152688BD41005F2A39 /* Project object */;
+}

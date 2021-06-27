@@ -9,13 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Bratislava Toilets")
-            .padding()
+		VStack(alignment: .leading) {
+			Text("Bratislava Toilets").font(.title).fontWeight(.heavy).foregroundColor(Color.blue).multilineTextAlignment(.center).padding()
+			HStack {
+				Text("Ludovit Stur Square")
+					.font(.subheadline)
+					.fontWeight(.medium)
+			}
+		}
+		Button("Launch Maps", action: {MapView()})
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+		Group {
+			ContentView()
+		}
     }
 }
+
+//struct MapView: View
+//{
+//	var body: some View
+//	{
+//	let camera = GMSCameraPosition.camera(withLatitude: -33, longitude: 130, zoom: 8.0)
+//		let mapView = GMSMapView.map(withFrame: MapView.frame, camera: camera)
+//		self.view.addSubview(mapView)
+//	}
+//}
