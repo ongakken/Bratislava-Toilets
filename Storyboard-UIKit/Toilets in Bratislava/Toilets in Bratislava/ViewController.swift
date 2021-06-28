@@ -9,7 +9,7 @@ import UIKit
 import GoogleMaps
 
 class ViewController: UIViewController, GMSMapViewDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let camera = GMSCameraPosition.camera(withLatitude: 48.141, longitude: 17.109, zoom: 13.5)
@@ -38,8 +38,6 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     // MARK: GMSMapViewDelegate
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-//        UIApplication.shared.openURL(URL(string: "https://www.google.com/maps/dir/?api=1&origin=Google+Pyrmont+NSW&destination=QVB&destination_place_id=ChIJISz8NjyuEmsRFTQ9Iw7Ear8&travelmode=walking")!)
-        eurovea()
+        UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/\(marker.position.latitude),\(marker.position.longitude),16z")!)
     }
 }
-

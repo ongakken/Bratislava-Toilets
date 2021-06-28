@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151CBD652689CDCF0037DCC5 /* eurovea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CBD642689CDCF0037DCC5 /* eurovea.swift */; };
 		15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F202688BD41005F2A39 /* AppDelegate.swift */; };
 		15729F232688BD41005F2A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F222688BD41005F2A39 /* SceneDelegate.swift */; };
 		15729F252688BD41005F2A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F242688BD41005F2A39 /* ViewController.swift */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.release.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.release.xcconfig"; sourceTree = "<group>"; };
-		151CBD642689CDCF0037DCC5 /* eurovea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eurovea.swift; sourceTree = "<group>"; };
 		15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilets in Bratislava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15729F202688BD41005F2A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15729F222688BD41005F2A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,14 +42,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		151CBD632689CDB50037DCC5 /* toilets */ = {
-			isa = PBXGroup;
-			children = (
-				151CBD642689CDCF0037DCC5 /* eurovea.swift */,
-			);
-			path = toilets;
-			sourceTree = "<group>";
-		};
 		15729F142688BD41005F2A39 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +66,6 @@
 				15729F202688BD41005F2A39 /* AppDelegate.swift */,
 				15729F222688BD41005F2A39 /* SceneDelegate.swift */,
 				15729F242688BD41005F2A39 /* ViewController.swift */,
-				151CBD632689CDB50037DCC5 /* toilets */,
 				15729F262688BD41005F2A39 /* Main.storyboard */,
 				15729F292688BD42005F2A39 /* Assets.xcassets */,
 				15729F2B2688BD42005F2A39 /* LaunchScreen.storyboard */,
@@ -219,7 +208,6 @@
 				15729F252688BD41005F2A39 /* ViewController.swift in Sources */,
 				15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */,
 				15729F232688BD41005F2A39 /* SceneDelegate.swift in Sources */,
-				151CBD652689CDCF0037DCC5 /* eurovea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
