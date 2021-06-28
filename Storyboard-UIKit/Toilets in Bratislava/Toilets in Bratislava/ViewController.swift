@@ -8,13 +8,16 @@
 import UIKit
 import GoogleMaps
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GMSMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let camera = GMSCameraPosition.camera(withLatitude: 48.141, longitude: 17.109, zoom: 13.5)
         let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-        self.view.addSubview(mapView)
+        mapView.delegate = self
+        mapView.settings.myLocationButton = true
+        self.view = mapView
+        //self.view.addSubview(mapView)
         
         // verejne hajzle namestie Eugena Suchona
         let marker_suchon = GMSMarker()
@@ -28,9 +31,15 @@ class ViewController: UIViewController {
         marker_eurovea.position = CLLocationCoordinate2D(latitude: 48.140, longitude: 17.121)
         marker_eurovea.title = "Eurovea Shopping Center"
         marker_eurovea.snippet = "The Old Town"
+        marker_eurovea.icon = GMSMarker.markerImage(with: .blue)
         marker_eurovea.map = mapView
     }
-
-
+    
+    // MARK: GMSMapViewDelegate
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+//        UIApplication.shared.openURL(URL(string: "https://www.google.com/maps/dir/?api=1&origin=Google+Pyrmont+NSW&destination=QVB&destination_place_id=ChIJISz8NjyuEmsRFTQ9Iw7Ear8&travelmode=walking")!)
+        eurovea()
+    }
 }
 
