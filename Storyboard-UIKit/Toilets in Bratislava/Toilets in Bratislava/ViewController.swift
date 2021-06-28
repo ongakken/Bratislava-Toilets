@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import GoogleMaps
 import GoogleMobileAds
 
@@ -47,7 +48,8 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
     // MARK: GMSMapViewDelegate
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/?api=1&origin=&destination=\(marker.position.latitude),\(marker.position.longitude)&travelmode=walking")!)
+//        UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/?api=1&origin=&destination=\(marker.position.latitude),\(marker.position.longitude)&travelmode=walking")!)
+		present(euroveaView(), animated: false, completion: nil)
     }
 	
 	func addBannerViewToView(_ bannerView: GADBannerView) {
