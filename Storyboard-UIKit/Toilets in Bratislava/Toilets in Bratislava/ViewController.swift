@@ -58,7 +58,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 												relatedBy: .equal,
 												toItem: view.safeAreaLayoutGuide,
 												attribute: .top,
-												multiplier: 1,
+												multiplier: 3.3,
 												constant: 0),
 							 NSLayoutConstraint(item: bannerView,
 												attribute: .centerX,
