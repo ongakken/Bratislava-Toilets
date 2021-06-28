@@ -20,11 +20,11 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
         let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
         mapView.delegate = self
         self.view = mapView
-		addBannerViewToView(bannerView)
 		bannerView.adUnitID = "ca-app-pub-9086446979210331/7085643056"
 		bannerView.rootViewController = self
 		bannerView.delegate = self
 		bannerView.load(GADRequest())
+		addBannerViewToView(bannerView)
         //self.view.addSubview(mapView)
         
         // verejne WC namestie Eugena Suchona
