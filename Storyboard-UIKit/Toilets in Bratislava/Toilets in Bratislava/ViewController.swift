@@ -33,7 +33,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
         marker_suchon.position = CLLocationCoordinate2D(latitude: 48.141, longitude: 17.109)
         marker_suchon.title = "Eugen Suchon Square"
         marker_suchon.snippet = "The Old Town"
-        marker_suchon.icon = GMSMarker.markerImage(with: .yellow)
+        marker_suchon.icon = GMSMarker.markerImage(with: .cyan)
         marker_suchon.map = mapView
         
         // verejne WC Eurovea
@@ -41,7 +41,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
         marker_eurovea.position = CLLocationCoordinate2D(latitude: 48.140, longitude: 17.121)
         marker_eurovea.title = "Eurovea Shopping Center"
         marker_eurovea.snippet = "The Old Town"
-        marker_eurovea.icon = GMSMarker.markerImage(with: .yellow)
+        marker_eurovea.icon = GMSMarker.markerImage(with: .cyan)
         marker_eurovea.map = mapView
     }
     

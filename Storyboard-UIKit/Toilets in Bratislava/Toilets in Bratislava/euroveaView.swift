@@ -11,8 +11,18 @@ import UIKit
 class euroveaView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        Label("Hajzel 1", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
-        Text("Hajzel?").bold()
-        Image("Toilet40.png")
+		let toiletNameLabel = UILabel()
+		let toiletImage = UIImage()
+		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
+		toiletNameLabel.textAlignment = .center
+		toiletNameLabel.text = "Testing this here"
+		toiletNameLabel.font = UIFont.systemFont(ofSize: 30)
+		toiletNameLabel.textAlignment = .center
+		toiletImage.imageAsset
+		view.addSubview(toiletNameLabel)
+		
+		NSLayoutConstraint.activate([toiletNameLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
+									toiletNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor,constant: 0),
+									])
     }
 }
