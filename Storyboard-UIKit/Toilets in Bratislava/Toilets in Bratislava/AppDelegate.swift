@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleMaps
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyBq_ofuAcHghFQsqmOnkm8EviXwRBPUf24")
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 

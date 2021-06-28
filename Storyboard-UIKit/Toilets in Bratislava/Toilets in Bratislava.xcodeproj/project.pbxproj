@@ -18,10 +18,12 @@
 
 /* Begin PBXFileReference section */
 		0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.release.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.release.xcconfig"; sourceTree = "<group>"; };
+		1530713F2689F3EF0044D3C7 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		153071432689F43C0044D3C7 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
 		15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilets in Bratislava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15729F202688BD41005F2A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15729F222688BD41005F2A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15729F242688BD41005F2A39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15729F242688BD41005F2A39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		15729F272688BD41005F2A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15729F292688BD42005F2A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15729F2C2688BD42005F2A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		3C0D12C162E4FB32F6537C91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				153071432689F43C0044D3C7 /* GoogleAppMeasurement.xcframework */,
+				1530713F2689F3EF0044D3C7 /* GoogleMobileAds.xcframework */,
 				A18D4F80BABB5AC4D75F8F34 /* Pods_Toilets_in_Bratislava.framework */,
 			);
 			name = Frameworks;
@@ -103,6 +107,7 @@
 				15729F1A2688BD41005F2A39 /* Frameworks */,
 				15729F1B2688BD41005F2A39 /* Resources */,
 				B0A119C895AFA232F48C5A92 /* [CP] Copy Pods Resources */,
+				F735CD8B15BDB4B3157B2EF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +201,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F735CD8B15BDB4B3157B2EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

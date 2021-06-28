@@ -57,6 +57,12 @@
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.travel</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-9086446979210331~5457700760</string>
+	<key>SKAdNetworkItems</key>
+	<array/>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
