@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153CCC3F268DA59C009A0889 /* toiletDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */; };
+		153CCC41268DB9B8009A0889 /* oldTown.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 153CCC40268DB9B8009A0889 /* oldTown.gpx */; };
 		15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F202688BD41005F2A39 /* AppDelegate.swift */; };
 		15729F232688BD41005F2A39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F222688BD41005F2A39 /* SceneDelegate.swift */; };
 		15729F252688BD41005F2A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F242688BD41005F2A39 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.release.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.release.xcconfig"; sourceTree = "<group>"; };
 		1530713F2689F3EF0044D3C7 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		153071432689F43C0044D3C7 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = toiletDetailView.storyboard; sourceTree = "<group>"; };
+		153CCC40268DB9B8009A0889 /* oldTown.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = oldTown.gpx; sourceTree = "<group>"; };
 		15729F1D2688BD41005F2A39 /* Toilets in Bratislava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toilets in Bratislava.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15729F202688BD41005F2A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15729F222688BD41005F2A39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +72,9 @@
 				15729F202688BD41005F2A39 /* AppDelegate.swift */,
 				15729F222688BD41005F2A39 /* SceneDelegate.swift */,
 				15729F242688BD41005F2A39 /* ViewController.swift */,
+				153CCC40268DB9B8009A0889 /* oldTown.gpx */,
 				15729F262688BD41005F2A39 /* Main.storyboard */,
+				153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */,
 				15729F292688BD42005F2A39 /* Assets.xcassets */,
 				15729F2B2688BD42005F2A39 /* LaunchScreen.storyboard */,
 				15729F2E2688BD42005F2A39 /* Info.plist */,
@@ -156,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15729F2D2688BD42005F2A39 /* LaunchScreen.storyboard in Resources */,
+				153CCC41268DB9B8009A0889 /* oldTown.gpx in Resources */,
+				153CCC3F268DA59C009A0889 /* toiletDetailView.storyboard in Resources */,
 				15729F2A2688BD42005F2A39 /* Assets.xcassets in Resources */,
 				15729F282688BD41005F2A39 /* Main.storyboard in Resources */,
 			);

@@ -27,7 +27,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>No location usage. The GMaps SDK declares this access, but we don't actually use it.</string>
+	<string>Precise location usage to ensure the user knows where they are when urgently looking for a toilet.</string>
 	<key>SKAdNetworkItems</key>
 	<array/>
 	<key>UIApplicationSceneManifest</key>
@@ -50,7 +50,7 @@
 		</dict>
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
+	<false/>
 	<key>UILaunchStoryboardName</key>
 	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
