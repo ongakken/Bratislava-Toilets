@@ -57,7 +57,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 15)
 		let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
 		mapView.delegate = self
-		self.view = mapView
+		//self.view = mapView
 		
 		// our current location
 		let marker_currentLocation = GMSMarker()
@@ -82,6 +82,11 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_eurovea.icon = GMSMarker.markerImage(with: .cyan)
 		marker_eurovea.map = mapView
 		
+		let delay = 4.0
+		DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+			self.locationManager.stopUpdatingLocation()
+		}
+		
 	}
     
     // MARK: GMSMapViewDelegate
@@ -92,11 +97,12 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 //		vc.modalPresentationStyle = .automatic
 //		vc.toiletName = marker.title
 //		present(vc, animated: true, completion: nil)
-		if let toiletDetailViewController = storyboard?.instantiateViewController(withIdentifier: "toiletDetailView") {
-			toiletDetailViewController.modalPresentationStyle = .automatic
-			//toiletDetailViewController.toiletName = marker.title
-			present(toiletDetailViewController, animated: true, completion: nil)
-		}
+//		let storyboard = UIStoryboard(name: "toiletDetailView", bundle: nil)
+//		let toiletDetailViewController = storyboard.instantiateInitialViewController() as? toiletDetailView
+//		let toiletDetailViewCtrl =
+//		toiletDetailViewController?.modalPresentationStyle = .automatic
+//		toiletDetailViewController?.toiletName = marker.title
+//		present(toiletDetailViewController!, animated: true, completion: nil)
     }
 	
 	func addBannerViewToView(_ bannerView: GADBannerView) {
@@ -120,25 +126,52 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 	}
 }
 
-class euroveaView: UIViewController {
-	
-	var toiletName: String! = ""
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		view.isOpaque = true
-		view.backgroundColor = .darkGray
-		let toiletNameLabel = UILabel()
-		let toiletImage = UIImage()
-		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
-		toiletNameLabel.text = toiletName
-		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
-		toiletNameLabel.textAlignment = .center
-		toiletImage.imageAsset
-		view.addSubview(toiletNameLabel)
-		
-		NSLayoutConstraint.activate([toiletNameLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 5),
-									toiletNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor,constant: 0)
-									])
-	}
-}
+//class euroveaView: UIViewController {
+//
+//	var toiletName: String! = ""
+//
+//	override func viewDidLoad() {
+//		super.viewDidLoad()
+//		view.isOpaque = true
+//		view.backgroundColor = .darkGray
+//		let toiletNameLabel = UILabel()
+//		let toiletImage = UIImage()
+//		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
+//		toiletNameLabel.text = toiletName
+//		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
+//		toiletNameLabel.textAlignment = .center
+//		toiletImage.imageAsset
+//		view.addSubview(toiletNameLabel)
+//
+//		NSLayoutConstraint.activate([toiletNameLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 5),
+//									toiletNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor,constant: 0)
+//									])
+//	}
+//}
+
+//class toiletDetailView: UIViewController {
+//
+//		var toiletName: String! = ""
+//
+//		override func viewDidLoad() {
+//			super.viewDidLoad()
+//			view.isOpaque = true
+//			view.backgroundColor = .darkGray
+//			let toiletNameLabel = UILabel()
+//			let toiletImagesArray = UIImage()
+//			let toiletImageView = UIImageView()
+//			toiletImagesArray.images
+//			toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
+//			toiletNameLabel.text = toiletName
+//			toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
+//			toiletNameLabel.textAlignment = .center
+//			//toiletImage.image = nil
+//			view.addSubview(toiletNameLabel)
+//			view.addSubview(toiletImageView)
+//
+//			NSLayoutConstraint.activate([toiletNameLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 5),
+//										toiletNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor,constant: 0)
+//										])
+//	}
+//
+//}
