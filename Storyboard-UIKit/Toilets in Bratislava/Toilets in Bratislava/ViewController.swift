@@ -82,6 +82,11 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_eurovea.icon = GMSMarker.markerImage(with: .cyan)
 		marker_eurovea.map = mapView
 		
+		let delay = 4.0
+		DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+			self.locationManager.stopUpdatingLocation()
+		}
+		
 	}
     
     // MARK: GMSMapViewDelegate
@@ -92,11 +97,11 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 //		vc.modalPresentationStyle = .automatic
 //		vc.toiletName = marker.title
 //		present(vc, animated: true, completion: nil)
-		if let toiletDetailViewController = storyboard?.instantiateViewController(withIdentifier: "toiletDetailView") {
+		let storyboard = UIStoryboard(name: "toiletDetailView", bundle: nil)
+		let toiletDetailViewController = storyboard.instantiateViewController(withIdentifier: "toiletDetailView") as! toiletDetailViewController
 			toiletDetailViewController.modalPresentationStyle = .automatic
-			//toiletDetailViewController.toiletName = marker.title
+			toiletDetailViewController.toiletName = marker.title
 			present(toiletDetailViewController, animated: true, completion: nil)
-		}
     }
 	
 	func addBannerViewToView(_ bannerView: GADBannerView) {
@@ -120,25 +125,33 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 	}
 }
 
-class euroveaView: UIViewController {
+class toiletDetailViewController: UIViewController {
+	
+	@IBOutlet var toiletNameLabel: UILabel!
+	
+	@IBOutlet var toiletImageView: CircImageView!
+	
 	
 	var toiletName: String! = ""
-	
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.isOpaque = true
 		view.backgroundColor = .darkGray
-		let toiletNameLabel = UILabel()
-		let toiletImage = UIImage()
 		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
 		toiletNameLabel.text = toiletName
 		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
 		toiletNameLabel.textAlignment = .center
-		toiletImage.imageAsset
 		view.addSubview(toiletNameLabel)
-		
-		NSLayoutConstraint.activate([toiletNameLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 5),
-									toiletNameLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor,constant: 0)
-									])
+		toiletImageView.image = UIImage(named: "iu")
+	}
+}
+
+@IBDesignable
+class CircImageView: UIImageView {
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		self.layer.cornerRadius = self.frame.size.height / 2
+		self.clipsToBounds = true
 	}
 }

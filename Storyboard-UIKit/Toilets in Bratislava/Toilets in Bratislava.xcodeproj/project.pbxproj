@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150656C7268F7F02003323E8 /* toiletImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150656C6268F7F02003323E8 /* toiletImages.xcassets */; };
 		153CCC3F268DA59C009A0889 /* toiletDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */; };
 		153CCC41268DB9B8009A0889 /* oldTown.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 153CCC40268DB9B8009A0889 /* oldTown.gpx */; };
 		15729F212688BD41005F2A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15729F202688BD41005F2A39 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0FB2627961773AF574F4075D /* Pods-Toilets in Bratislava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilets in Bratislava.release.xcconfig"; path = "Target Support Files/Pods-Toilets in Bratislava/Pods-Toilets in Bratislava.release.xcconfig"; sourceTree = "<group>"; };
+		150656C6268F7F02003323E8 /* toiletImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = toiletImages.xcassets; sourceTree = "<group>"; };
 		1530713F2689F3EF0044D3C7 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		153071432689F43C0044D3C7 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
 		153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = toiletDetailView.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				15729F202688BD41005F2A39 /* AppDelegate.swift */,
 				15729F222688BD41005F2A39 /* SceneDelegate.swift */,
 				15729F242688BD41005F2A39 /* ViewController.swift */,
+				150656C6268F7F02003323E8 /* toiletImages.xcassets */,
 				153CCC40268DB9B8009A0889 /* oldTown.gpx */,
 				15729F262688BD41005F2A39 /* Main.storyboard */,
 				153CCC3E268DA59C009A0889 /* toiletDetailView.storyboard */,
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150656C7268F7F02003323E8 /* toiletImages.xcassets in Resources */,
 				15729F2D2688BD42005F2A39 /* LaunchScreen.storyboard in Resources */,
 				153CCC41268DB9B8009A0889 /* oldTown.gpx in Resources */,
 				153CCC3F268DA59C009A0889 /* toiletDetailView.storyboard in Resources */,
@@ -386,7 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XQ5SLZB954;
 				INFOPLIST_FILE = "Toilets in Bratislava/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -394,7 +398,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.020;
+				MARKETING_VERSION = 0.030;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ongakken.batoilets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -410,7 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XQ5SLZB954;
 				INFOPLIST_FILE = "Toilets in Bratislava/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -418,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.020;
+				MARKETING_VERSION = 0.030;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ongakken.batoilets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "toiletsinbratislava-profile";
