@@ -129,29 +129,33 @@ class toiletDetailViewController: UIViewController {
 	
 	@IBOutlet var toiletNameLabel: UILabel!
 	
-	@IBOutlet var toiletImageView: CircImageView!
+	@IBOutlet var feeInfo: UILabel!
 	
+	@IBOutlet var toiletFeeLabel: UILabel!
+	
+	@IBOutlet var toiletImageView: UIImageView!
 	
 	var toiletName: String! = ""
+	var toiletFee: Float = 0.0
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.isOpaque = true
 		view.backgroundColor = .darkGray
+		feeInfo.textColor = UIColor.white
 		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
 		toiletNameLabel.text = toiletName
-		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
+		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 30)
+		toiletNameLabel.textColor = UIColor.white
 		toiletNameLabel.textAlignment = .center
-		view.addSubview(toiletNameLabel)
+		//view.addSubview(toiletNameLabel)
+		toiletFeeLabel.text = String(describing: toiletFee)
+		toiletFeeLabel.font = UIFont.boldSystemFont(ofSize: 20)
+		toiletFeeLabel.textColor = UIColor.white
 		toiletImageView.image = UIImage(named: "iu")
-	}
-}
-
-@IBDesignable
-class CircImageView: UIImageView {
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		self.layer.cornerRadius = self.frame.size.height / 2
-		self.clipsToBounds = true
+		toiletImageView.layer.cornerRadius = 10.0
+		toiletImageView.clipsToBounds = true
+		toiletImageView.layer.borderWidth = 1.5
+		toiletImageView.layer.borderColor = UIColor .black.cgColor
 	}
 }
