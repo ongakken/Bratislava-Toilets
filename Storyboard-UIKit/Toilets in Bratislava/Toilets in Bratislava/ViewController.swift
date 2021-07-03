@@ -16,7 +16,7 @@ public class toilet: NSObject {
 	let coords: CLLocationCoordinate2D
 	let usageFee: Float
 	let availability: Bool
-	
+
 	init(name: String, coords: CLLocationCoordinate2D, usageFee: Float, availability: Bool) {
 		self.name = name
 		self.coords = coords
@@ -45,8 +45,6 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		bannerView.rootViewController = self
 		bannerView.delegate = self
 		bannerView.load(GADRequest())
-		addBannerViewToView(bannerView)
-        //self.view.addSubview(mapView)
     }
 	
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -58,6 +56,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
 		mapView.delegate = self
 		self.view = mapView
+		addBannerViewToView(bannerView)
 		
 		// our current location
 		let marker_currentLocation = GMSMarker()
@@ -92,16 +91,18 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
     // MARK: GMSMapViewDelegate
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-//        UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/?api=1&origin=&destination=\(marker.position.latitude),\(marker.position.longitude)&travelmode=walking")!)
+		
 //		let vc = euroveaView()
 //		vc.modalPresentationStyle = .automatic
 //		vc.toiletName = marker.title
 //		present(vc, animated: true, completion: nil)
 		let storyboard = UIStoryboard(name: "toiletDetailView", bundle: nil)
 		let toiletDetailViewController = storyboard.instantiateViewController(withIdentifier: "toiletDetailView") as! toiletDetailViewController
-			toiletDetailViewController.modalPresentationStyle = .automatic
-			toiletDetailViewController.toiletName = marker.title
-			present(toiletDetailViewController, animated: true, completion: nil)
+		toiletDetailViewController.modalPresentationStyle = .automatic
+		toiletDetailViewController.toiletName = marker.title
+		toiletDetailViewController.toiletID = 11
+		toiletDetailViewController.toiletCoords = marker.position
+		present(toiletDetailViewController, animated: true, completion: nil)
     }
 	
 	func addBannerViewToView(_ bannerView: GADBannerView) {
@@ -125,7 +126,23 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 	}
 }
 
+func animImg(for toiletIDNum: Int) -> [UIImage] {
+	var i = 0
+	var img = [UIImage]()
+	
+	while let image = UIImage(named: "\(toiletIDNum)\(i)") {
+		img.append(image)
+		i += 1
+	}
+	return img
+}
+
 class toiletDetailViewController: UIViewController {
+	
+	var toiletID: Int = 0
+	var toiletName: String! = ""
+	var toiletFee: Float = 0.0
+	var toiletCoords: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
 	
 	@IBOutlet var toiletNameLabel: UILabel!
 	
@@ -135,8 +152,13 @@ class toiletDetailViewController: UIViewController {
 	
 	@IBOutlet var toiletImageView: UIImageView!
 	
-	var toiletName: String! = ""
-	var toiletFee: Float = 0.0
+	@IBOutlet var toiletNavBtn: UIButton!
+	
+	@IBAction func onNavBtnTap(_ sender: UIButton) {
+		
+		UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/?api=1&origin=&destination=\(toiletCoords.latitude),\(toiletCoords.longitude)&travelmode=walking")!)
+		
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -152,10 +174,14 @@ class toiletDetailViewController: UIViewController {
 		toiletFeeLabel.text = String(describing: toiletFee)
 		toiletFeeLabel.font = UIFont.boldSystemFont(ofSize: 20)
 		toiletFeeLabel.textColor = UIColor.white
-		toiletImageView.image = UIImage(named: "iu")
+		toiletImageView.animationImages = animImg(for: toiletID)
+		toiletImageView.animationDuration = 5
+		toiletImageView.animationRepeatCount = 0
+		toiletImageView.image = toiletImageView.animationImages?.first
 		toiletImageView.layer.cornerRadius = 10.0
 		toiletImageView.clipsToBounds = true
 		toiletImageView.layer.borderWidth = 1.5
 		toiletImageView.layer.borderColor = UIColor .black.cgColor
+		toiletImageView.startAnimating()
 	}
 }

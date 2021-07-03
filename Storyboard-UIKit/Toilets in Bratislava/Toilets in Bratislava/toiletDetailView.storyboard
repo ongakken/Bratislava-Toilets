@@ -23,6 +23,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-9o-BpP">
+                                <rect key="frame" x="39" y="185" width="350" height="500"/>
+                                <accessibility key="accessibilityConfiguration" identifier="toiletImage"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="ZVE-KQ-ODf"/>
+                                    <constraint firstAttribute="height" constant="500" id="cHX-0g-9g8"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="toiletFee" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjw-dd-hdr">
                                 <rect key="frame" x="313" y="138" width="76" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -35,14 +43,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHP-9o-BpP">
-                                <rect key="frame" x="39" y="185" width="350" height="500"/>
-                                <accessibility key="accessibilityConfiguration" identifier="toiletImage"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="ZVE-KQ-ODf"/>
-                                    <constraint firstAttribute="height" constant="500" id="cHX-0g-9g8"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-Iq-bIC">
+                                <rect key="frame" x="166" y="700" width="96" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Navigate"/>
+                                <connections>
+                                    <action selector="onNavBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XmR-wt-NFM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -54,10 +62,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yjw-dd-hdr" secondAttribute="trailing" constant="39" id="MBQ-b7-i2h"/>
                             <constraint firstItem="SfJ-nT-Zon" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="WWb-gy-3tk"/>
                             <constraint firstItem="IHP-9o-BpP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dkM-Kg-PHZ"/>
+                            <constraint firstItem="Slq-Iq-bIC" firstAttribute="top" secondItem="IHP-9o-BpP" secondAttribute="bottom" constant="15" id="doD-9v-uif"/>
                             <constraint firstItem="Yjw-dd-hdr" firstAttribute="leading" secondItem="O06-p1-ylI" secondAttribute="trailing" constant="234" id="gpx-gf-18e"/>
                             <constraint firstItem="IHP-9o-BpP" firstAttribute="top" secondItem="Yjw-dd-hdr" secondAttribute="bottom" constant="23" id="m2O-Pi-6ib"/>
                             <constraint firstItem="Yjw-dd-hdr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="94" id="oUB-IF-ytK"/>
                             <constraint firstItem="O06-p1-ylI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="39" id="pyj-rl-Oto"/>
+                            <constraint firstItem="Slq-Iq-bIC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zgb-Rk-G8h"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,6 +75,7 @@
                         <outlet property="toiletFeeLabel" destination="Yjw-dd-hdr" id="2PH-RB-vTp"/>
                         <outlet property="toiletImageView" destination="IHP-9o-BpP" id="uW2-P1-Gj4"/>
                         <outlet property="toiletNameLabel" destination="SfJ-nT-Zon" id="8ct-ty-xda"/>
+                        <outlet property="toiletNavBtn" destination="Slq-Iq-bIC" id="nsS-dz-zGw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
