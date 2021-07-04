@@ -143,8 +143,13 @@ class toiletDetailViewController: UIViewController {
 	var toiletName: String! = ""
 	var toiletFee: Float = 0.0
 	var toiletCoords: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+	var toiletIsAvailable: Bool = true
 	
 	@IBOutlet var toiletNameLabel: UILabel!
+	
+	@IBOutlet var availableInfo: UILabel!
+	
+	@IBOutlet var isAvailableLabel: UILabel!
 	
 	@IBOutlet var feeInfo: UILabel!
 	
@@ -159,18 +164,29 @@ class toiletDetailViewController: UIViewController {
 		UIApplication.shared.open(URL(string: "https://www.google.com/maps/dir/?api=1&origin=&destination=\(toiletCoords.latitude),\(toiletCoords.longitude)&travelmode=walking")!)
 		
 	}
+	
+	@IBAction func onDetailCloseBtnTap(_ sender: UIButton) {
+		dismiss(animated: true, completion: nil)
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.isOpaque = true
 		view.backgroundColor = .darkGray
 		feeInfo.textColor = UIColor.white
+		availableInfo.textColor = UIColor.white
+		if (toiletIsAvailable) {
+			isAvailableLabel.text = "Yes"
+		} else {
+			isAvailableLabel.text = "No"
+		}
 		toiletNameLabel.translatesAutoresizingMaskIntoConstraints = false
 		toiletNameLabel.text = toiletName
 		toiletNameLabel.font = UIFont.boldSystemFont(ofSize: 30)
 		toiletNameLabel.textColor = UIColor.white
 		toiletNameLabel.textAlignment = .center
-		//view.addSubview(toiletNameLabel)
+		isAvailableLabel.textColor = UIColor.white
+		isAvailableLabel.font = UIFont.boldSystemFont(ofSize: 20)
 		toiletFeeLabel.text = String(describing: toiletFee)
 		toiletFeeLabel.font = UIFont.boldSystemFont(ofSize: 20)
 		toiletFeeLabel.textColor = UIColor.white
@@ -182,6 +198,10 @@ class toiletDetailViewController: UIViewController {
 		toiletImageView.clipsToBounds = true
 		toiletImageView.layer.borderWidth = 1.5
 		toiletImageView.layer.borderColor = UIColor .black.cgColor
+		toiletNavBtn.backgroundColor = .black
+		toiletNavBtn.layer.cornerRadius = 5
+		toiletNavBtn.layer.borderWidth = 1
+		toiletNavBtn.layer.borderColor = UIColor.black.cgColor
 		toiletImageView.startAnimating()
 	}
 }
