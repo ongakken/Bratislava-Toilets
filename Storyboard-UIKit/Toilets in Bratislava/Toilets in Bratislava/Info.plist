@@ -27,7 +27,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Precise location usage to ensure the user knows where they are when urgently looking for a toilet.</string>
+	<string>We need your location so you can see where you are and find the nearest toilet as soon as possible to prevent a disaster from taking place.</string>
 	<key>SKAdNetworkItems</key>
 	<array/>
 	<key>UIApplicationSceneManifest</key>

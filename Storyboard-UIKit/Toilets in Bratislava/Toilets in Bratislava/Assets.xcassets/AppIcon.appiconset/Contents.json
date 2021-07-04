@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "toilet40.png",
+      "filename" : "toilets-BA-icon40-2.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "toilet60.png",
+      "filename" : "toilets-BA-icon60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "toilet58-1.png",
+      "filename" : "toilets-BA-icon58-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "toilet87.png",
+      "filename" : "toilets-BA-icon87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "toilet80 copy.png",
+      "filename" : "toilets-BA-icon80-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "toilet120-1.png",
+      "filename" : "toilets-BA-icon120-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "toilet120.png",
+      "filename" : "toilets-BA-icon120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "toilet180.png",
+      "filename" : "toilets-BA-icon180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "toilet20.png",
+      "filename" : "toilets-BA-icon20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "toilet40-1.png",
+      "filename" : "toilets-BA-icon40-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "toilet29.png",
+      "filename" : "toilets-BA-icon29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "toilet58.png",
+      "filename" : "toilets-BA-icon58.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "toilet40-2.png",
+      "filename" : "toilets-BA-icon40.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "toilet80.png",
+      "filename" : "toilets-BA-icon80.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "toilet76.png",
+      "filename" : "toilets-BA-icon76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "toilet152.png",
+      "filename" : "toilets-BA-icon152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "toilet167.png",
+      "filename" : "toilets-BA-icon167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "toilet.png",
+      "filename" : "toilets-BA-iconMain.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

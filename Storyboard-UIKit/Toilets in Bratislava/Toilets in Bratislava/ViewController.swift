@@ -70,7 +70,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_suchon.position = toilets[0].coords
 		marker_suchon.title = toilets[0].name
 		marker_suchon.snippet = "The Old Town"
-		marker_suchon.icon = GMSMarker.markerImage(with: .cyan)
+		marker_suchon.icon = UIImage(named: "markerImg")
 		marker_suchon.map = mapView
 		
 		// verejne WC Eurovea
@@ -78,7 +78,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_eurovea.position = toilets[1].coords
 		marker_eurovea.title = toilets[1].name
 		marker_eurovea.snippet = "The Old Town"
-		marker_eurovea.icon = GMSMarker.markerImage(with: .cyan)
+		marker_eurovea.icon = UIImage(named: "markerImg")
 		marker_eurovea.map = mapView
 		
 		let delay = 4.0
