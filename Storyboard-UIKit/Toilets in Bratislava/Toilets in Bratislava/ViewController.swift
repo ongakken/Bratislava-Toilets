@@ -25,7 +25,14 @@ public class toilet: NSObject {
 	}
 }
 
-public let toilets = [toilet(name: "Eugen Suchon Square", coords: CLLocationCoordinate2D(latitude: 48.141, longitude: 17.109), usageFee: 0.0, availability: true), toilet(name: "Eurovea Shopping Center", coords: CLLocationCoordinate2D(latitude: 48.140, longitude: 17.121), usageFee: 0.0, availability: true)]
+public let toilets = [toilet(name: "Eugen Suchon Square", coords: CLLocationCoordinate2D(latitude: 48.141, longitude: 17.109), usageFee: 0.0, availability: true),
+					  toilet(name: "Eurovea Shopping Center", coords: CLLocationCoordinate2D(latitude: 48.140, longitude: 17.121), usageFee: 0.0, availability: true),
+					  toilet(name: "Ursulinska Street", coords: CLLocationCoordinate2D(latitude: 48.144, longitude: 17.109), usageFee: 0.3, availability: true),
+					  toilet(name: "Most SNP", coords: CLLocationCoordinate2D(latitude: 48.140, longitude: 17.103), usageFee: 0.5, availability: true),
+					  toilet(name: "Presidential palace", coords: CLLocationCoordinate2D(latitude: 48.151, longitude: 17.109), usageFee: 0.0, availability: true),
+					  toilet(name: "Central Bus Station", coords: CLLocationCoordinate2D(latitude: 48.144, longitude: 17.128), usageFee: 0.0, availability: true),
+					  toilet(name: "Trnavske Myto underpass", coords: CLLocationCoordinate2D(latitude: 48.157, longitude: 17.128), usageFee: 0.5, availability: true),
+					  toilet(name: "Central Train Station", coords: CLLocationCoordinate2D(latitude: 48.158, longitude: 17.106), usageFee: 0.0, availability: true)]
 
 class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegate, CLLocationManagerDelegate {
 	
@@ -80,6 +87,14 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_eurovea.snippet = "The Old Town"
 		marker_eurovea.icon = UIImage(named: "markerImg")
 		marker_eurovea.map = mapView
+		
+		// verejne WC Ursulinska
+		let marker_ursulinska = GMSMarker()
+		marker_ursulinska.position = toilets[2].coords
+		marker_ursulinska.title = toilets[2].name
+		marker_ursulinska.snippet = "The Old Town"
+		marker_ursulinska.icon = UIImage(named: "markerImg")
+		marker_ursulinska.map = mapView
 		
 		let delay = 4.0
 		DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
