@@ -32,7 +32,8 @@ public let toilets = [toilet(name: "Eugen Suchon Square", coords: CLLocationCoor
 					  toilet(name: "Presidential palace", coords: CLLocationCoordinate2D(latitude: 48.151, longitude: 17.109), usageFee: 0.0, availability: true),
 					  toilet(name: "Central Bus Station", coords: CLLocationCoordinate2D(latitude: 48.144, longitude: 17.128), usageFee: 0.0, availability: true),
 					  toilet(name: "Trnavske Myto underpass", coords: CLLocationCoordinate2D(latitude: 48.157, longitude: 17.128), usageFee: 0.5, availability: true),
-					  toilet(name: "Central Train Station", coords: CLLocationCoordinate2D(latitude: 48.158, longitude: 17.106), usageFee: 0.0, availability: true)]
+					  toilet(name: "Central Train Station", coords: CLLocationCoordinate2D(latitude: 48.158, longitude: 17.106), usageFee: 0.0, availability: true),
+					  toilet(name: "Aupark Shopping Center", coords: CLLocationCoordinate2D(latitude: 48.132, longitude: 17.107), usageFee: 0.0, availability: true)]
 
 class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegate, CLLocationManagerDelegate {
 	
@@ -95,6 +96,54 @@ class ViewController: UIViewController, GMSMapViewDelegate, GADBannerViewDelegat
 		marker_ursulinska.snippet = "The Old Town"
 		marker_ursulinska.icon = UIImage(named: "markerImg")
 		marker_ursulinska.map = mapView
+		
+		// verejne WC most SNP
+		let marker_snpBridge = GMSMarker()
+		marker_snpBridge.position = toilets[3].coords
+		marker_snpBridge.title = toilets[3].name
+		marker_snpBridge.snippet = "The Old Town"
+		marker_snpBridge.icon = UIImage(named: "markerImg")
+		marker_snpBridge.map = mapView
+		
+		// verejne WC prezidentsky palac
+		let marker_presidential = GMSMarker()
+		marker_presidential.position = toilets[4].coords
+		marker_presidential.title = toilets[4].name
+		marker_presidential.snippet = "The Old Town"
+		marker_presidential.icon = UIImage(named: "markerImg")
+		marker_presidential.map = mapView
+		
+		// verejne WC autobusova stanica
+		let marker_busStation = GMSMarker()
+		marker_busStation.position = toilets[5].coords
+		marker_busStation.title = toilets[5].name
+		marker_busStation.snippet = "The New/Old Town"
+		marker_busStation.icon = UIImage(named: "markerImg")
+		marker_busStation.map = mapView
+		
+		// verejne WC podchod trnavske myto
+		let marker_tmUnderpass = GMSMarker()
+		marker_tmUnderpass.position = toilets[6].coords
+		marker_tmUnderpass.title = toilets[6].name
+		marker_tmUnderpass.snippet = "The Old Town"
+		marker_tmUnderpass.icon = UIImage(named: "markerImg")
+		marker_tmUnderpass.map = mapView
+		
+		// verejne WC hlavna stanica
+		let marker_mainStation = GMSMarker()
+		marker_mainStation.position = toilets[7].coords
+		marker_mainStation.title = toilets[7].name
+		marker_mainStation.snippet = "The Old Town"
+		marker_mainStation.icon = UIImage(named: "markerImg")
+		marker_mainStation.map = mapView
+		
+		// verejne WC Aupark
+		let marker_aupark = GMSMarker()
+		marker_aupark.position = toilets[8].coords
+		marker_aupark.title = toilets[8].name
+		marker_aupark.snippet = "Petrzalka"
+		marker_aupark.icon = UIImage(named: "markerImg")
+		marker_aupark.map = mapView
 		
 		let delay = 4.0
 		DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
